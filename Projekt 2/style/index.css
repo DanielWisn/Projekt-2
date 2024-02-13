@@ -1,0 +1,12 @@
+:root{
+    --color-1: #000000;
+    --color-2: #ffcb3f;
+    --background-color-1: #b6b6b6;
+    --font-family-1: "Roboto" , sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,a,small,p,input,span{
+    font-family: var(--font-family);
+}
+
+

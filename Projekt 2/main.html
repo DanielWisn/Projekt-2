@@ -4,60 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/reset.css" />
-    <title>Projekt 2</title>
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="Assets/Icons/burger-svgrepo-com.svg">
+    <title>SmartPOS</title>
   </head>
   <body>
     <navbar>
-      <h2><img id="Logo" />Smart POS</h2>
-      <ul>
-        <li>
+      <div class="Logo">
+        <h2><img id="Logo" src="./Assets/Icons/Logo.svg"/>SmartPOS</h2>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#">
+              <img class="icon" src="./Assets/Icons/Dashboard.svg" />
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon" src="./Assets/Icons/Food&Drinks.svg"/>
+              <span>Food & Drinks</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="icon" src="./Assets/Icons/Messeges.svg"/>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li>
+           <a href="#">
+              <img class="icon" src="./Assets/Icons/Bills.svg"/>
+              <span>Bills</span>
+            </a>
+          </li>
+          <li>
           <a href="#">
-            <img class="icon" />
-            <span>Dashboard</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img class="icon" />
-            <span>Food & Drinks</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img class="icon" />
-            <span>Messages</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img class="icon" />
-            <span>Bills</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img class="icon" />
+            <img class="icon" src="./Assets/Icons/Settings.svg"/>
             <span>Settings</span>
           </a>
-        </li>
+          </li>
       </ul>
+      </div>
       <h6>other</h6>
-      <ul id="other">
-        <li>
-          <a href="#">
-            <img class="icon" />
-            <span>Notifications</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img class="icon" />
-            <span>Support</span>
-          </a>
-        </li>
-      </ul>
+      <div class="other">
+        <ul id="other">
+          <li>
+            <a href="#">
+              <img class="icon" src="./Assets/Icons/Notifications.svg" />
+              <span>Notifications</span>
+            </a>
+          </li>
+          <li>
+              <a href="#">
+                <img class="icon" src="./Assets/Icons/Support.svg"/>
+                <span>Support</span>
+              </a>
+          </li>
+        </ul>
+      </div>
       <div id="profile">
-        <img id="pfp" />
+        <img id="pfp" src="./Assets/PFP.jpg"/>
         <h4>Theresa Webb</h4>
         <h6>Waiter • 4h 56m</h6>
         <button>Open profile</button>
@@ -69,47 +86,59 @@
       <a href="#">Food & Drinks</a>
       <a href="#">Burgers</a>
       <div id="search">
-        <img class="icon" />
+        <img class="icon" src="./Assets/Icons/Search.svg"/>
         <input type="text" placeholder="Search..." />
       </div>
     </searchbar>
     <main>
-      <h1>Burgers<img id="Burger" /></h1>
+      <h1>Burgers<img id="Burger" src="./Assets/Icons/Burgeremoji.png"/></h1>
       <div class="Burgers">
-        <img class="Burgerimg" />
-        <h3>Cheeseburger</h3>
-        <h6>150 g</h6>
-        <h2>$3.50</h2>
+        <img class="Burgerimg" src="./Assets/Cheeseburger.png" />
+        <div class="details">
+          <h3>Cheeseburger</h3>
+          <h6>150 g</h6>
+          <h2>$3.50</h2>
+        </div>
       </div>
       <div class="Burgers">
-        <img class="Burgerimg" />
-        <h3>Chicken-Deluxe</h3>
-        <h6>240 g</h6>
-        <h2>$4.25</h2>
+        <img class="Burgerimg" src="./Assets/Chicken-Deluxe.png"/>
+        <div class="details">
+          <h3>Chicken-Deluxe</h3>
+          <h6>240 g</h6>
+          <h2>$4.25</h2>
+        </div>
       </div>
       <div class="Burgers">
-        <img class="Burgerimg" />
-        <h3>Hamburger</h3>
-        <h6>320 g</h6>
-        <h2>$4.50</h2>
+        <img class="Burgerimg" src="./Assets/Hamburger.png"/>
+        <div class="details">
+          <h3>Hamburger</h3>
+          <h6>320 g</h6>
+          <h2>$4.50</h2>
+        </div>
       </div>
       <div class="Burgers">
-        <img class="Burgerimg" />
-        <h3>Big John</h3>
-        <h6>650 g</h6>
-        <h2>cena</h2>
+        <img class="Burgerimg" src="./Assets/BigJohn.png"/>
+        <div class="details">
+          <h3>Big John</h3>
+          <h6>650 g</h6>
+          <h2>cena</h2>
+        </div>
       </div>
       <div class="Burgers">
-        <img class="Burgerimg" />
-        <h3>Spicy Chicken</h3>
-        <h6>340 g</h6>
-        <h2>cena</h2>
+        <img class="Burgerimg" src="./Assets/SpicyChicken.png"/>
+        <div class="details">
+          <h3>Spicy Chicken</h3>
+          <h6>340 g</h6>
+          <h2>cena</h2>
+        </div>
       </div>
       <div class="Burgers">
-        <img class="Burgerimg" />
-        <h3>Superstars</h3>
-        <h6>250 g</h6>
-        <h2>cena</h2>
+        <img class="Burgerimg" src="./Assets/Superstars.png"/>
+        <div class="details"></div>
+          <h3>Superstars</h3>
+          <h6>250 g</h6>
+          <h2>cena</h2>
+        </div>
       </div>
     </main>
   </body>
