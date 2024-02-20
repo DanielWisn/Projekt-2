@@ -3,141 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/reset.css" />
-    <link rel="stylesheet" href="style/normalize.css" />
-    <link rel="stylesheet" href="style/navbar.css" />
-    <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" href="style/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="icon" href="Assets/Icons/burger-svgrepo-com.svg">
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/nav.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="Assets/Icons/burger-svgrepo-com.svg" />
     <title>SmartPOS</title>
   </head>
   <body>
-    <navbar>
+    <nav>
       <div class="Logo">
-        <h2><img id="Logo" src="./Assets/Icons/Logo.svg"/>SmartPOS</h2>
+        <img id="Logo" src="./Assets/Icons/Logo.svg" />
+        <h2>SmartPOS</h2>
       </div>
-      <div class="menu">
-        <ul>
-          <li>
-            <a href="#">
-              <img class="icon" src="./Assets/Icons/Dashboard.svg" />
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="icon" src="./Assets/Icons/Food&Drinks.svg"/>
-              <span>Food & Drinks</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img class="icon" src="./Assets/Icons/Messeges.svg"/>
-              <span>Messages</span>
-            </a>
-          </li>
-          <li>
-           <a href="#">
-              <img class="icon" src="./Assets/Icons/Bills.svg"/>
-              <span>Bills</span>
-            </a>
-          </li>
-          <li>
-          <a href="#">
-            <img class="icon" src="./Assets/Icons/Settings.svg"/>
-            <span>Settings</span>
-          </a>
-          </li>
-      </ul>
-      </div>
-      <h6>other</h6>
-      <div class="other">
-        <ul id="other">
-          <li>
-            <a href="#">
-              <img class="icon" src="./Assets/Icons/Notifications.svg" />
-              <span>Notifications</span>
-            </a>
-          </li>
-          <li>
+      <div class="menu-wrapper">
+        <div class="menu-part">
+          <ul>
+            <li>
               <a href="#">
-                <img class="icon" src="./Assets/Icons/Support.svg"/>
+                <img class="icon" src="./Assets/Icons/Dashboard.svg" />
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="icon" src="./Assets/Icons/Food&Drinks.svg" />
+                <span>Food & Drinks</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="icon" src="./Assets/Icons/Messeges.svg" />
+                <span>Messages</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="icon" src="./Assets/Icons/Bills.svg" />
+                <span>Bills</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="icon" src="./Assets/Icons/Settings.svg" />
+                <span>Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-part">
+          <h6>Other</h6>
+          <ul id="other">
+            <li>
+              <a href="#">
+                <img class="icon" src="./Assets/Icons/Notifications.svg" />
+                <span>Notifications</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img class="icon" src="./Assets/Icons/Support.svg" />
                 <span>Support</span>
               </a>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div id="profile">
-        <img id="pfp" src="./Assets/PFP.jpg"/>
+      <div class="profile">
+        <div class="pfp">
+          <img id="pfp" src="./Assets/PFP.png" />
+        </div>
         <h4>Theresa Webb</h4>
         <h6>Waiter • 4h 56m</h6>
         <button>Open profile</button>
+        <small>© 2020 SmartPOS App</small>
       </div>
-      <small>© 2020 SmartPOS App</small>
-    </navbar>
-    <searchbar>
-      <button>←</button>
-      <a href="#">Food & Drinks</a>
-      <a href="#">Burgers</a>
-      <div id="search">
-        <img class="icon" src="./Assets/Icons/Search.svg"/>
-        <input type="text" placeholder="Search..." />
-      </div>
-    </searchbar>
+    </nav>
     <main>
-      <h1>Burgers<img id="Burger" src="./Assets/Icons/Burgeremoji.png"/></h1>
-      <div class="Burgers">
-        <img class="Burgerimg" src="./Assets/Cheeseburger.png" />
-        <div class="details">
-          <h3>Cheeseburger</h3>
-          <h6>150 g</h6>
-          <h2>$3.50</h2>
+      <div class="searchbar">
+        <div class="track">
+          <button>←</button>
+          <a href="#" id="FD">Food & Drinks</a>
+          <a href="#" id="B">Burgers</a>
+        </div>
+        <div id="search">
+          <img class="icon" src="./Assets/Icons/Search.svg" />
+          <input type="text" placeholder="Search..." />
         </div>
       </div>
-      <div class="Burgers">
-        <img class="Burgerimg" src="./Assets/Chicken-Deluxe.png"/>
-        <div class="details">
-          <h3>Chicken-Deluxe</h3>
-          <h6>240 g</h6>
-          <h2>$4.25</h2>
-        </div>
+      <div class="title">
+        <h1>Burgers</h1>
+        <img id="Burger" src="./Assets/Icons/Burgeremoji.png" />
       </div>
-      <div class="Burgers">
-        <img class="Burgerimg" src="./Assets/Hamburger.png"/>
-        <div class="details">
-          <h3>Hamburger</h3>
-          <h6>320 g</h6>
-          <h2>$4.50</h2>
+      <div class="order">
+        <div class="order-part">
+          <div class="Burgers">
+            <img class="Burgerimg" id="Cheeseburger"  src="./Assets/Cheeseburger.png" />
+            <div class="details">
+              <h3>Cheeseburger</h3>
+              <h5>150 g</h5>
+              <h2>$3.50</h2>
+            </div>
+          </div>
+          <div class="Burgers">
+            <img class="Burgerimg" id="Chicken-Deluxe" src="./Assets/Chicken-Deluxe.png" />
+            <div class="details">
+              <h3>Chicken-Deluxe</h3>
+              <h5>240 g</h5>
+              <h2>$4.25</h2>
+            </div>
+          </div>
+          <div class="Burgers">
+            <img class="Burgerimg" id="Hamburger" src="./Assets/Hamburger.png" />
+            <div class="details">
+              <h3>Hamburger</h3>
+              <h5>320 g</h5>
+              <h2>$4.50</h2>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="Burgers">
-        <img class="Burgerimg" src="./Assets/BigJohn.png"/>
-        <div class="details">
-          <h3>Big John</h3>
-          <h6>650 g</h6>
-          <h2>cena</h2>
-        </div>
-      </div>
-      <div class="Burgers">
-        <img class="Burgerimg" src="./Assets/SpicyChicken.png"/>
-        <div class="details">
-          <h3>Spicy Chicken</h3>
-          <h6>340 g</h6>
-          <h2>cena</h2>
-        </div>
-      </div>
-      <div class="Burgers">
-        <img class="Burgerimg" src="./Assets/Superstars.png"/>
-        <div class="details"></div>
-          <h3>Superstars</h3>
-          <h6>250 g</h6>
-          <h2>cena</h2>
+        <div class="order-part">
+          <div class="Burgers">
+            <img class="Burgerimg" id="BigJohn" src="./Assets/BigJohn.png" />
+            <div class="details">
+              <h3>Big John</h3>
+              <h5>650 g</h5>
+              <h2>$5.00</h2>
+            </div>
+          </div>
+          <div class="Burgers">
+            <img class="Burgerimg" id="SpicyChicken" src="./Assets/SpicyChicken.png" />
+            <div class="details">
+              <h3>Spicy Chicken</h3>
+              <h5>340 g</h5>
+              <h2>$4.75</h2>
+            </div>
+          </div>
+          <div class="Burgers">
+            <img class="Burgerimg" id="Superstars" src="./Assets/Superstars.png" />
+            <div class="details">
+              <h3>Superstars</h3>
+              <h5>250 g</h5>
+              <h2>$4.00</h2>
+            </div>
+          </div>
         </div>
       </div>
     </main>

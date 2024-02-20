@@ -1,0 +1,83 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 24vw;
+  top: 0;
+  position: sticky;
+  height: 100vh;
+  border-right: 1px solid var(--background-color-1);
+  margin-right: 0.4rem;
+}
+
+div.menu-wrapper{
+    flex:1;
+}
+
+nav > div.Logo {
+  display: flex;
+  align-items: center;
+  padding-right: 0.2rem ;
+}
+
+nav > div.menu-wrapper > div.menu-part {
+  display: flex;
+  flex-direction: column;
+}
+
+nav > div.Logo > img#Logo {
+  background-color: var(--background-color-1);
+  margin: 0.35rem;
+  border-radius: 5px;
+}
+
+nav > div.menu-wrapper > div.menu-part > ul > li {
+  transition: 0.3s;
+}
+
+nav > div.menu-wrapper > div.menu-part > ul > li:hover {
+  background-color: var(--color-2);
+  border-radius: 10px;
+}
+
+nav > div.menu-wrapper > div.menu-part > ul > li > a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+nav > div.menu-wrapper > div.menu-part > h6 {
+  margin-left: 0.65rem;
+  color:var(--background-color-1)
+}
+
+img.icon {
+  margin: 0.2rem;
+}
+
+div.pfp {
+  width: 30%;
+  margin: 0.2rem;
+}
+div.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+div.profile > button {
+  background-color: var(--background-color-1);
+  border-radius: 5px;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  transition: 0.3s;
+}
+
+div.profile > button:active {
+  background-color: var(--color-2);
+}
+
+small {
+  font-size: 0.5rem;
+}
