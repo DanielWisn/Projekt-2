@@ -8,7 +8,7 @@ div.searchbar{
 div.searchbar > div.track > button{
     background-color: var(--background-color-1);
     border-radius: 5px;
-    padding: 0.2rem;
+    padding: 0.4rem;
     margin: 0.2rem;
     margin-left: 0.3rem;
 }
@@ -65,13 +65,15 @@ div.Burgers{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    width: 20%;
+    width: 50%;
     border-radius: 20px;
     margin-bottom: 1.3rem;
     padding-bottom: 0.4rem;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
     padding-left: 2rem;
-    padding-right: 2rem ;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     box-sizing: content-box;
     transition: 0.5s;
 }
@@ -97,4 +99,36 @@ div.details > h2{
 
 img.Burgerimg{
     width: 80%;
+}
+
+@media only screen and (max-width:1510px) {
+    img#Burger{display: none;}
+}
+
+@media only screen and (max-width:768px){
+    html{font-size: 12px;}
+    div.order-part{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    div.Burgers{
+        width:90vw
+    }
+    img#Chicken-Deluxe{
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+    }
+    img#Hamburger{
+        margin-top: 5rem;
+        margin-bottom: 4rem;
+    }
+    img#SpicyChicken{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+    img#Superstars{
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
 }
